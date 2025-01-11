@@ -6,7 +6,7 @@ def password():
     n1 = random.choice(n)
     result = []
     for i in range(1, 20):
-        for j in range(i + 1, 21):
+        for j in range(i + 1, 20):
             if n1 % (i + j) == 0:
                 result.append(f"{i}+{j}")
     return n1, result
